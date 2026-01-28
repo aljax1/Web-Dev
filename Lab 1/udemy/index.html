@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <title>Web Dev Blog Post</title>
+    <style>
+        .card {
+            width: 240px;
+            height: auto;
+            margin-top: 30px;
+            padding:0;
+            border-radius: 2px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+        }
+        .top {
+            position: relative;
+            width: 200px;
+            height: 100%;
+            background-image: url('https://static.scientificamerican.com/dam/m/4aaa836e513fa8a5/original/krijn_neanderthal_face_reconstruction.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            padding: 60px 20px;
+            color: white;   
+            margin-bottom: 0;
+        }
+        #name {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+        }
+        #faculty {
+            position: absolute;
+            left: 20px;
+            bottom: 0px;
+        }
+        #indicator{
+            position:absolute;
+            left: 90px;
+            bottom: -5px;
+        }
+        .mid {
+            position:relative;
+            width:240px;
+            height: auto;
+            margin-top: -16px
+        }
+        .bottom {
+            position:relative;
+            width:240px;
+            height: auto;
+            margin-top: -16px
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        header {
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 20px;
+            position: relative;
+            height: 50px;
+            width: auto;
+            display: flex;
+        }
+        .links{
+            justify-content: flex-end;
+            display: flex;
+            padding: 10px;
+            gap: 20px;
+        }
+        .links a:hover{
+            background-color: aqua;
+            
+        }
+
+        
+    </style>
+
+<body>
+    <header>
+        <h1 style="font-family: 'Courier New', Courier, monospace;">UDACITY</h1>
+
+        <nav>
+            <ul class="links">
+                <li><a href="google.com">NanoDegree</a></li>
+                <li><a href="google.com">Catalog</a></li>
+                <li><a href="google.com">My Classroom</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="card">
+        <div class="card top">
+            <p id="name">Cameron Pittman</p>
+            <svg id="indicator" width="100" height="100">
+                <circle cx="50" cy="50" r="4" fill="green" />
+              </svg>              
+            <p id="faculty">Udacity Content Developer</p>
+        </div>
+        <div class="card mid">
+            <p style="margin-left: 12px;">1:12PM local time</p>
+        </div>
+        <div class="card bottom">
+            <ul>
+                <li>
+                    <a href="http://google.com">google</a>
+                </li>
+                <li>
+                    <a href="http://google.com">google</a>
+                </li>
+                <li>
+                    <a href="http://google.com">google</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
